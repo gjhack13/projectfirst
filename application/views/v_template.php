@@ -4,14 +4,14 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<title>ARA APPS</title>
+	<title>Agenda Pegawai BPIP</title>
 	<meta name="description" content="Zapily is a Dashboard & Admin Site Responsive Template by hencework." />
 	<meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Zapily Admin, Zapilyadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
 	<meta name="author" content="hencework" />
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="<?= base_url() ?>favicon.ico">
-	<link rel="icon" href="<?= base_url() ?>favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="http://www.bpip.go.id/templates/tx_fitness/favicon.ico">
+	<link rel="icon" href="http://www.bpip.go.id/templates/tx_fitness/favicon.ico" type="image/x-icon">
 
 	<!-- Data table CSS -->
 	<link href="<?= base_url() ?>vendors/bower_components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
@@ -37,7 +37,7 @@
 	<div class="wrapper theme-2-active pimary-color-gold">
 		<!-- Top Menu Items -->
 		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<span class="weight-500 uppercase-font block mt-10" style="text-align: center;margin-bottom: -30px; color: white; ">Selamat Datang <?= $this->session->userdata('tipe'); ?>, Pada Sistem Informasi Manajemen Agenda Pegawai BPIP</span>
+			<span class="weight-500 uppercase-font block mt-15" style="text-align: center;margin-bottom: -30px; color: white; ">Selamat Datang <?= $this->session->userdata('tipe'); ?>, Pada Sistem Informasi Manajemen Agenda Pegawai BPIP</span>
 			<div class="mobile-only-brand pull-left">
 				<div class="nav-header pull-left">
 					<div class="logo-wrap">
@@ -132,7 +132,7 @@
 
 				<?php endif; ?>
 
-				<?php if ($this->session->userdata('tipe') != 'admin' && $this->session->userdata('tipe') != 'direktur') : ?>
+				<?php if ($this->session->userdata('tipe') != 'admin' && $this->session->userdata('tipe') != 'pimpinan') : ?>
 					<li>
 						<hr class="light-grey-hr mb-10" />
 					</li>
@@ -155,7 +155,7 @@
 
 				<?php endif; ?>
 
-				<?php if ($this->session->userdata('tipe') != 'admin' && $this->session->userdata('tipe') != 'direktur' && $this->session->userdata('tipe') != 'karyawan') : ?>
+				<?php if ($this->session->userdata('tipe') != 'admin' && $this->session->userdata('tipe') != 'pimpinan' && $this->session->userdata('tipe') != 'karyawan') : ?>
 
 					<li>
 						<hr class="light-grey-hr mb-10" />
@@ -173,9 +173,9 @@
 					</li>
 				<?php endif ?>
 
-				<?php if ($this->session->userdata('tipe') == 'direktur' || $this->session->userdata('tipe') == 'admin') : ?>
+				<?php if ($this->session->userdata('tipe') == 'pimpinan' || $this->session->userdata('tipe') == 'admin') : ?>
 
-					<?php if ($this->session->userdata('tipe') == 'direktur') : ?>
+					<?php if ($this->session->userdata('tipe') == 'pimpinan') : ?>
 						<li>
 							<hr class="light-grey-hr mb-10" />
 						</li>
@@ -261,23 +261,14 @@
 
 			</div>
 
-			<!-- Footer -->
-			<footer class="footer container-fluid pl-30 pr-30">
-				<div class="row">
-					<div class="col-sm-12 text-center">
-						<p>Copyright © 2018<script>
-								new Date().getFullYear() > 2018 && document.write("-" + new Date().getFullYear());
-							</script>, Pusdatin BPIP.</p>
-					</div>
-				</div>
-			</footer>
-			<!-- /Footer -->
-
 		</div>
 		<!-- /Main Content -->
 
+
+
 	</div>
 	<!-- /#wrapper -->
+
 
 	<!-- JavaScript -->
 
@@ -329,6 +320,7 @@
 
 	<!-- Form Flie Upload Data JavaScript -->
 	<script src="dist/js/form-file-upload-data.js"></script>
+
 
 </body>
 

@@ -77,7 +77,11 @@ Project:	Zapily
 /** Imports **/
 /****************************/
 @import url(
-  https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700
+  https://fonts.googleapis.com/css?family=Roboto:100,
+  300,
+  400,
+  500,
+  700
 );
 @import url(../../../vendors/bower_components/bootstrap/dist/css/bootstrap.min.css);
 @import url(font-awesome.min.css);
@@ -15781,13 +15785,13 @@ a#toggle_mobile_nav {
   background: rgba(42, 62, 76, 0.75);
 }
 .wrapper.theme-2-active .navbar.navbar-inverse.navbar-fixed-top {
-  background: #2a3e4c;
-  border-bottom: 1px solid #2a3e4c;
+  background: #ff616f;
+  border-bottom: 1px solid #c72b38;
 }
 .wrapper.theme-2-active
   .navbar.navbar-inverse.navbar-fixed-top
   .mobile-only-brand {
-  background: #2a3e4c;
+  background: #ff616f;
 }
 .wrapper.theme-2-active
   .navbar.navbar-inverse.navbar-fixed-top
@@ -23103,7 +23107,8 @@ a.compose-mail {
   width: 100%;
   left: 0;
   top: 0;
-  background: #212121;
+  background-image: url("http://www.bpip.go.id/images/garuda.png");
+  background-position: center;
   opacity: 0.4;
 }
 .profile-box .profile-cover-pic .fileupload.btn,

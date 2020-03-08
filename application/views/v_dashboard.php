@@ -60,14 +60,18 @@ $rapat_soon = $this->db->query("SELECT * FROM pengajuan_rapat WHERE hasil_rapat=
 		<div class="panel panel-default card-view">
 			<div class="panel-heading">
 
-				<h4 align="center">VISI</h4>
+				<h4 align="center">PANCASILA</h4>
 
 				<div class="clearfix"></div>
 			</div>
 			<div class="panel-wrapper collapse in">
 				<div class="panel-body">
 					<span class="weight-500 uppercase-font block font-13" style="line-height: 40px">
-						Menjadi Perusahaan Penyedia kebutuhan Produk Bahan Makanan dan Minuman yang terlengkap, Terkemuka, Terpecaya & Terjangkau untuk seluruh Modern & Traditional Retail & Food Services di Indonesia dan memberikan manfaat bagi seluruh pihak terkait dengan menyediakan jasa warehousing, logistic & distribution standard Internasional.<br>
+						1. Ketuhanan Yang Maha Esa<br>
+						2. Kemanusiaan yang adil dan beradab<br>
+						3. Persatuan Indonesia<br>
+						4. Kerakyatan Yang Dipimpin Oleh Hikmat Kebijaksanaan dalam Permusyawaratan Perwakilan<br>
+						5. Keadilan Sosial Bagi Seluruh Rakyat Indonesia
 					</span>
 
 				</div>
@@ -79,20 +83,15 @@ $rapat_soon = $this->db->query("SELECT * FROM pengajuan_rapat WHERE hasil_rapat=
 		<div class="panel panel-default card-view">
 			<div class="panel-heading">
 
-				<h4 align="center">Misi</h4>
+				<h4 align="center">Tentang</h4>
 
 				<div class="clearfix"></div>
 			</div>
 			<div class="panel-wrapper collapse in">
 				<div class="panel-body">
 					<span class="weight-500 uppercase-font block font-13" ">
-						1.	Memposisikan Customer sebagai Prioritas.<br>
-						2.	Mengoptimalisasikan Sumber Daya Manusia yang Unggul.<br>
-						3.	Membangun Sistem dan Teknologi yang Inovatif dan Kompetitif untuk Warehousing, Logistic & Distributions.<br>
-						4.	Membangun Kemitraaan yang mendukung dan menguntungkan secara strategis<br>
-						5.	Meningkatkan Mutu dari Karyawan, Proses, kualitas Produk dan Pelayanan terbaik.<br>
-						6.	Berkontribusi terhadap Peningkatan Gizi, standarisasi Penyimpanan, Pengiriman, dan pendistribusioan serta Mengimplementasikan Total Quality System, WMS, GMP, HACCP, Sertifikasi Halal & ISO .<br>
-						7.	Membangun Top Mind Brand untuk Masyarakat Indonesia maupun Internasional.<br>
+						Pada hakikatnya Pancasila telah di bentuk melalui proses yang cukup panjang oleh para pendiri bangsa. Pancasila sebagai ideologi dinamis yang mencerminkan keterbukaan pemikiran yang mampu menerima segala iklim perubahan yang terjadi agar mampu melaksanakan nilai-nilai Pancasila yang luhur secara mendasar. <hr>
+						Badan Pembinaan Ideologi Pancasila adalah adalah institusi yang melakukan pembinaan ideologi Pancasila dengan tugas membantu Presiden dalam merumuskan arah kebijakan umum pembinaan ideologi Pancasila dan melaksanakan koordinasi, sinkronisasi, dan pengendalian pembinaan ideologi Pancasila secara menyeluruh dan berkelanjutan.
 					</span>
 					
 				</div>
@@ -100,4 +99,16 @@ $rapat_soon = $this->db->query("SELECT * FROM pengajuan_rapat WHERE hasil_rapat=
 		</div>
 	</div>
 </div>
-					<!-- /Row -->
+
+						<!-- Footer -->
+						<footer class=" footer container-fluid pl-30 pr-30">
+						<div class="row">
+							<div class="col-sm-12 text-center">
+								<p>Copyright © 2018<script>
+										new Date().getFullYear() > 2018 && document.write("-" + new Date().getFullYear());
+									</script>, Pusdatin BPIP.</p>
+							</div>
+						</div>
+						</footer>
+						<!-- /Footer -->
+						<!-- /Row -->
