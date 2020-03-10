@@ -35,7 +35,7 @@ class c_login extends CI_Controller
 
 			if ($user['nip'] == $nip) {
 
-				if ($user['password'] == $pass) {
+				if (password_verify($user, $pass,  ['password'])) {
 
 					$data = [
 						'nip' => $user['nip'],

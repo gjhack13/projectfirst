@@ -37,7 +37,8 @@ class c_admin extends CI_Controller
 		$data = array(
 			'nip' => $this->input->post('nip'),
 			'nama' => $this->input->post('nama'),
-			'password' => $this->input->post('password'),
+			'password' => password_hash($this->input->post('password'),
+			PASSWORD_DEFAULT),
 			'tipe' => $this->input->post('tipe'),
 			'foto' => $file_path = $this->input->post('nama') . ".jpg"
 		);
@@ -67,7 +68,8 @@ class c_admin extends CI_Controller
 			$data = [
 				'nip' => $this->input->post('nip'),
 				'nama' => $this->input->post('nama'),
-				'password' => $this->input->post('password'),
+				'password' => password_hash($this->input->post('password'),
+				PASSWORD_DEFAULT),
 				'tipe' => $this->input->post('tipe')
 			];
 		} else {
@@ -75,7 +77,8 @@ class c_admin extends CI_Controller
 
 				'nip' => $this->input->post('nip'),
 				'nama' => $this->input->post('nama'),
-				'password' => $this->input->post('password'),
+				'password' => password_hash($this->input->post('password'),
+				PASSWORD_DEFAULT),
 				'tipe' => $this->input->post('tipe'),
 				'foto' => $file_path = $this->input->post('nama') . ".jpg"
 			];
